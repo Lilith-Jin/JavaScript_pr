@@ -10,10 +10,10 @@
 // })
 
 document.addEventListener("DOMContentLoaded",function(){
-const form = document.querySelector(".user_form");
+const form = document.querySelector("#user_form");
 
 form.addEventListener("submit", (e) => {
-  if (document.querySelector(".user_id").value === "") {
+  if (document.querySelector("#user_id").value === "") {
     e.preventDefault();//不換頁
     alert("填起乃");
     }
