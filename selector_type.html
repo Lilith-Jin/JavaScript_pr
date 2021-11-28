@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <script>
+      document.addEventListener("DOMContentLoaded",function(){
+      const elms1 = document.querySelector(".hi:nth-child(2)")
+			const elms2 = document.querySelector("#hi")
+			const elms3 = document.querySelectorAll(".hi")
+      console.log(elms3);
+			const elms4 = document.getElementsByClassName(".hi")
+      console.log(elms4);
+      })
+    </script>
+</head>
+<body>
+  <div id="hi">Hello</div>
+  <div>
+    <span class="hi">a</span>
+    <span class="hi">b</span>
+    <span class="hi">c</span>
+  </div>
+  <input type="submit" value="press">
+</body>
+</html>
