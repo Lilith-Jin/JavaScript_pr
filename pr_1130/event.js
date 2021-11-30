@@ -21,16 +21,19 @@ const in_div = document.querySelector(".item");
     
 // );
 wrap_div.addEventListener("click", (e)=> {
-  e.stopPropagation();
-  console.log("out"); 
+  // console.log("hi"); 
+  console.log("target",e.target);
+  console.log("current",e.currentTarget);
 });
 
 
 out_div.addEventListener("click", (e)=> {
-  e.stopPropagation();
-  console.log("out"); 
+  
+  console.log("target",e.target);
+  console.log("current",e.currentTarget);
 });
 
 in_div.addEventListener("click", (e)=> {
   console.log("in");
+  // console.log(e.target);
 });
