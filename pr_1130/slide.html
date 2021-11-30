@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* .box{
+      width: 200px;
+      height: 200px;
+      background-color: red;
+    }
+
+    .item{
+      display: flex;
+      padding: auto;
+      justify-content: center;
+    } */
+    .jcarousel {
+    position: relative;
+    overflow: hidden;
+    }
+
+    .jcarousel ul {
+    width: 10000em;
+    position: relative;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+
+    .jcarousel li {
+    /* Required only for block elements like <li>'s */
+    float: left;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- <div class="box">
+    <div class="item">123</div>
+  </div> -->
+  <button class="prev"></button>
+  <button class="next"></button>
+  <div class="jcarousel">
+    <ul>
+        <li><img src="adorable-3344414_1280.webp" alt=""></li>
+        <li><img src="adorable-3344414_1280.webp"></li>
+        <li><img src="adorable-3344414_1280.webp"></li>
+    </ul>
+</div>
+  <!-- 順序:jquery->使用套件->js檔 -->
+  <script src="jquery.js"></script>
+  <script src="jquery.jcarousel.min.js"></script>
+  <script src="slide.js"></script>
+</body>
+</html>
