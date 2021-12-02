@@ -1,0 +1,11 @@
+#taskInput{
+  padding: 4px, 8px;
+}
+
+
+.todoItem{
+  background-color: pink;
+  display: flex;
+  justify-content: space-between;
+  margin: 2px;
+}
